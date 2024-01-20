@@ -2,7 +2,8 @@ import React from 'react'
 import Post from '@/Components/Post'
 import Link from 'next/link'
 import { getServerSession } from 'next-auth/next'
-import { authOptions } from '../api/auth/[...nextauth]/route'
+import { authOptions } from '@/app/api/auth/[...nextauth]/option';
+
 import { redirect } from 'next/navigation'
 import { TPost } from '@/types'
 

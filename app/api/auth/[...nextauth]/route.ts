@@ -1,7 +1,5 @@
 
-import NextAuth, { AuthOptions, NextAuthOptions } from "next-auth";
-import GitHubProvide from "next-auth/providers/github";
-import GoogleProvider from "next-auth/providers/google"
+import NextAuth from "next-auth";
 import { authOptions } from "./option";
 
 const handler = NextAuth(authOptions)

@@ -2,7 +2,8 @@
 import { TPost } from '@/types'
 import React from 'react'
 import { getServerSession } from 'next-auth/next'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/app/api/auth/[...nextauth]/option';
+
 import { redirect } from 'next/navigation'
 import EditPostForm from '@/Components/EditPostForm'
 
