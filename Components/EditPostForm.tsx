@@ -150,7 +150,7 @@ export default function EditPostForm({ post }: { post: TPost }) {
             </svg>
 
           </div>
-          {imageUrl && <Image src={imageUrl} fill className='absolute object-cover inset-0' alt={title} />}
+          {imageUrl && <Image src={imageUrl} fill className=' object-cover inset-0' alt={title} />}
         </CldUploadButton>
 
         {
