@@ -6,7 +6,6 @@ import prisma from "@/lib/prismadb";
 
 
 export const authOptions: AuthOptions = {
-    adapter: PrismaAdapter(prisma),
     providers: [GitHubProvide({
         clientId: process.env.GITHUB_CLIENT_ID as string,
         clientSecret: process.env.GITHUB_CLIENT_SECRET as string
@@ -19,4 +18,4 @@ export const authOptions: AuthOptions = {
         signIn: "/sign-in"
     },
     secret: process.env.NEXTAUTH_SECRET
-}
+}   
