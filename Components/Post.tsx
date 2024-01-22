@@ -55,9 +55,9 @@ export default async function Post({
 
             </div>
             <div className='w-full h-72 relative'>
-                {thumbnail ? (<Image src={thumbnail} alt={title} fill className='relative object-cover rounded-md object-center' />
+                {thumbnail ? (<Image src={thumbnail} alt={title} fill className='absolut object-cover rounded-md object-center' />
                 ) : (
-                    <Image src={"/thumb.png"} alt={title} fill className=' relative object-cover rounded-md object-center' />
+                    <Image src={"/thumb.png"} alt={title} fill className=' absolut object-cover rounded-md object-center' />
                 )}
             </div>
             {category && <Link className='bg-slate-800 w-fit text-white px-4 py-0.5 text-sm font-bold rounded-md mt-4 block' href={`categories/${category}`}> {category} </Link>}
